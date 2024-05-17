@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-primaria: black;
-    --cor-secundaria: white;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-primaria: #02060a;
+    --cor-secundaria: #8FBDD3 ;
+    --cor-terciaria: #35767b; 
+    --cor-hover:#496766;
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona One", sans-serif;
@@ -100,7 +100,7 @@ body {
 }
 
 .apresentacao__links__navegacao:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
     /*padding: 3%;*/
 }
 
@@ -110,7 +110,7 @@ body {
 
 .rodape {
     background-color: var(--cor-terciaria);
-    color: var(--cor-hover);
+    color: var(--cor-primaria);
     padding: 24px; /*espaço entre o conteúdo e as bordas do botão*/
     text-align: center;
     font-family: "Montserrat", sans-serif;
