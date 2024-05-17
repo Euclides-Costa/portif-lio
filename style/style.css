@@ -33,7 +33,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-primaria);
-    font-size: 1.5rem;
+    font-size: 24px;
     width: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -44,7 +44,6 @@ body {
     display: flex; /*vai colocar todos em uma fila*/
     align-items: center;  /*vai colocar todos no centro na horizontal*/
     justify-content: space-between; /*espaço entre os filhos*/ 
-    gap: 82px;
 }
 
 .titulo-destaque {
@@ -52,26 +51,26 @@ body {
 }
 
 .apresentacao__conteudo {
-    width: 50%;
+    width: 615px;
     display: flex;
     flex-direction: column; /*defini a direção do alinhamento como vertical*/
     gap: 40px; /*coloca o espaço entre eles*/
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem; /*usando a unidade de medida rem, quando a unidade de medida do navegador for alterada vamos acompanhar esse mudança também*/
+    font-size: 36px;
     font-family: var(--fonte-secundaria);   
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .apresentacao__links { /*vai apenas dividir os botões*/
@@ -82,15 +81,15 @@ body {
     gap: 32px;
 }
 
-.apresentacao__links__navegacao {
+.apresentacao__links__link {
     display: flex; /*vai colocar todos em uma fila*/
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria); /*2 px é a expessura da borda*/
-    width: 50%; /*largura do "retângulo"*/
+    width: 378px; /*largura do "retângulo"*/
     text-align: center;
     border-radius: 8px; /*curvatura da borda*/
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0; /*distância entre a borda e o conteúdo*/
     text-decoration: none; /*tirar decoração (nesse caso vai ser a linha sublinhada)*/
@@ -99,13 +98,9 @@ body {
     
 }
 
-.apresentacao__links__navegacao:hover {
+.apresentacao__links__link:hover {
     background-color: var(--cor-hover);
     /*padding: 3%;*/
-}
-
-.apresentacao__imagem {
-    width: 50%;
 }
 
 .rodape {
@@ -114,32 +109,6 @@ body {
     padding: 24px; /*espaço entre o conteúdo e as bordas do botão*/
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
     width: 400;
 }
-
-@media (max-width: 1200px){
-    .cabecalho {
-        padding: 10%;
-    }
-
-    .cabecalho__menu {
-        justify-content: center;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse; /*reverse vai colocar na ordem inversa*/
-        padding: 5%;
-    }
-
-    .apresentacao__conteudo {
-        width: auto;
-    }
-}
-
-
-/* Anotações
- - Página responsíva: capacidade de se adequar independente do dispositivo que está abrindo
- - CSS media queries: mudar algo depois de uma determinada medida
-
- */ 
