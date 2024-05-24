@@ -16,7 +16,6 @@
 }
 
 body {
-    /*height: 100vh; seria para usar a tela todo*/
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -41,9 +40,9 @@ body {
 
 .apresentacao {
     padding: 5% 15%;
-    display: flex; /*vai colocar todos em uma fila*/
-    align-items: center;  /*vai colocar todos no centro na horizontal*/
-    justify-content: space-between; /*espaço entre os filhos*/ 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
     gap: 82px;
 }
 
@@ -54,12 +53,12 @@ body {
 .apresentacao__conteudo {
     width: 50%;
     display: flex;
-    flex-direction: column; /*defini a direção do alinhamento como vertical*/
-    gap: 40px; /*coloca o espaço entre eles*/
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem; /*usando a unidade de medida rem, quando a unidade de medida do navegador for alterada vamos acompanhar esse mudança também*/
+    font-size: 2.25rem;
     font-family: var(--fonte-secundaria);   
 }
 
@@ -74,26 +73,26 @@ body {
     font-size: 1.5rem;
 }
 
-.apresentacao__links { /*vai apenas dividir os botões*/
+.apresentacao__links {
     display: flex;
-    flex-direction: column; /*coloca tudo na vertical*/
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
 }
 
 .apresentacao__links__navegacao {
-    display: flex; /*vai colocar todos em uma fila*/
+    display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid var(--cor-terciaria); /*2 px é a expessura da borda*/
-    width: 50%; /*largura do "retângulo"*/
+    border: 2px solid var(--cor-terciaria); 
+    width: 50%; 
     text-align: center;
-    border-radius: 8px; /*curvatura da borda*/
+    border-radius: 8px; 
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px 0; /*distância entre a borda e o conteúdo*/
-    text-decoration: none; /*tirar decoração (nesse caso vai ser a linha sublinhada)*/
+    padding: 21.5px 0;
+    text-decoration: none;
     color: var(--cor-secundaria);
     font-family: "Montserrat", sans-serif;
     
@@ -101,7 +100,6 @@ body {
 
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
-    /*padding: 3%;*/
 }
 
 .apresentacao__imagem {
@@ -111,7 +109,7 @@ body {
 .rodape {
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
-    padding: 24px; /*espaço entre o conteúdo e as bordas do botão*/
+    padding: 24px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
@@ -128,7 +126,7 @@ body {
     }
 
     .apresentacao {
-        flex-direction: column-reverse; /*reverse vai colocar na ordem inversa*/
+        flex-direction: column-reverse;
         padding: 5%;
     }
 
@@ -136,10 +134,3 @@ body {
         width: auto;
     }
 }
-
-
-/* Anotações
- - Página responsíva: capacidade de se adequar independente do dispositivo que está abrindo
- - CSS media queries: mudar algo depois de uma determinada medida
-
- */ 
